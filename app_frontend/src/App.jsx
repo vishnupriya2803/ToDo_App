@@ -4,6 +4,7 @@ import './App.css'
 import Login from './Login'
 import Manger from './Manger'
 import Register from './Register'
+import Test from './Test'
 
 function App() {
   const [user, setUser] = useState('')
@@ -28,6 +29,7 @@ function App() {
                 <>
                   <p className="mb-2 text-gray-700">Welcome {user.email}</p>
                   <Manger />
+                  <Test/>
                 </>
               ) : (
                 <Login setUser={setUser} />
